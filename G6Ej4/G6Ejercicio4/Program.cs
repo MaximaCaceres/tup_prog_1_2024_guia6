@@ -12,19 +12,18 @@ namespace G6Ejercicio4
     {
         static void Main(string[] args)
         {
-            
-    
+
+
             int num1, num2;
-            int[] intervalo = new int[1000];
             Console.WriteLine("ingrese dos numeros");
             num1 = Convert.ToInt16(Console.ReadLine());
             num2 = Convert.ToInt16(Console.ReadLine());
-            RecorrerIntervalo(intervalo, num1, num2);
+            RecorrerIntervalo(num1, num2);
             Console.ReadKey();
 
         }
 
-        static void RecorrerIntervalo(int[] intervalo, int num1, int num2)
+        static void RecorrerIntervalo(int num1, int num2)
         {
             Console.WriteLine("Valores divisibles por 2 y 3 en el intervalo [{0}, {1}]:",num1,num2);
             if(num1 < num2)
